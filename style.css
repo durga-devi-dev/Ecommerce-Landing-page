@@ -121,6 +121,19 @@ color: black;
    
 
 }
+.services-container {
+    position: relative;
+    z-index: 1;
+}
+
+.services-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("./grocery1.jpg") center/cover no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
 #services .box{
     border: 2px solid yellowgreen;
     padding: 25px;
